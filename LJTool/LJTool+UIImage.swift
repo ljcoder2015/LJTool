@@ -14,7 +14,12 @@ extension UIImage: LJToolCompatible {
 }
 
 extension LJTool where Base: UIImage {
-    public static func createQRImage(_ encode: String) -> UIImage? {
+
+    /// Create QRImage
+    ///
+    /// - Parameter encode: encode string
+    /// - Returns: QR image
+    public static func QRImage(_ encode: String) -> UIImage? {
         
         let data = encode.data(using: .utf8)
         
@@ -36,5 +41,24 @@ extension LJTool where Base: UIImage {
             return nil
         }
         return UIImage(cgImage: CGImage)
+    }
+    
+    /// Create Image with color
+    ///
+    /// - Parameters:
+    ///   - color: image color
+    ///   - size: image size, default is CGSize(width: 6, height: 6)
+    /// - Returns: color image
+    public static func image(with color: UIColor, size: CGSize = CGSize(width: 6, height: 6)) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        let context = UIGraphicsGetCurrentContext()
+        guard let currentContext = context else {
+            return nil
+        }
+        currentContext.setFillColor(color.cgColor)
+        currentContext.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
     }
 }
