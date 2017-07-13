@@ -16,6 +16,8 @@
 		4FA8158B1F131FCB00716B85 /* LJToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8158A1F131FCB00716B85 /* LJToolDemoUITests.swift */; };
 		4FA815B21F13506200716B85 /* LJTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; };
 		4FA815B31F13506200716B85 /* LJTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */; };
+		4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		4FA8158A1F131FCB00716B85 /* LJToolDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJToolDemoUITests.swift; sourceTree = "<group>"; };
 		4FA8158C1F131FCC00716B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA815A91F134FD500716B85 /* LJTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJTool.xcodeproj; path = ../LJTool.xcodeproj; sourceTree = "<group>"; };
+		4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UICreateViewController.swift"; sourceTree = "<group>"; };
+		4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+ImageViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				4FA815711F131FCB00716B85 /* Assets.xcassets */,
 				4FA815731F131FCB00716B85 /* LaunchScreen.storyboard */,
 				4FA815761F131FCB00716B85 /* Info.plist */,
+				4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */,
+				4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */,
 			);
 			path = LJToolDemo;
 			sourceTree = "<group>";
@@ -336,8 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */,
 				4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */,
 				4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */,
+				4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
