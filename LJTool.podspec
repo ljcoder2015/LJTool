@@ -18,17 +18,8 @@ Pod::Spec.new do |s|
   s.name         = "LJTool"
   s.version      = "0.0.1"
   s.summary      = "Common tools library"
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
-
+  s.description  = "LJTool, Help you more convenient and quick development"
   s.homepage     = "http://www.ljcoder.com/2017/07/10/LJTool/"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,7 +56,6 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   s.platform     = :ios, "8.0"
-  #s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
@@ -77,9 +67,8 @@ Pod::Spec.new do |s|
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  s.source       = { :git => "git@github.com:ljcoder2015/LJTool.git", :tag => "#{s.version}" }
+  
+  s.source = { :git => "https://github.com/ljcoder2015/LJTool.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -35,6 +35,17 @@ extension LJTool where Base: UILabel {
         label.text = "------"
         return label
     }
+    
+    public static func label(textColor: UIColor = UIColor.lj.text, fontStyle: UIFontTextStyle = .body) -> UILabel {
+        let label = UILabel()
+        label.textColor = textColor
+        label.text = "------"
+        label.font = UIFont.preferredFont(forTextStyle: .body)
+        if #available(iOS 10.0, *) {
+            label.adjustsFontForContentSizeCategory = true
+        }
+        return label
+    }
 }
 
 // MARK: Create UIImageView
