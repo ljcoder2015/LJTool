@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LJTool"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Common tools library"
   s.description  = "LJTool, Help you more convenient and quick development"
   s.homepage     = "http://www.ljcoder.com/2017/07/10/LJTool/"
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   
-  s.source = { :git => "https://github.com/ljcoder2015/LJTool.git", :tag => "0.0.1" }
+  s.source = { :git => "https://github.com/ljcoder2015/LJTool.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
