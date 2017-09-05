@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LJTool"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Common tools library"
   s.description  = "LJTool, Help you more convenient and quick development"
   s.homepage     = "http://www.ljcoder.com/2017/07/10/LJTool/"

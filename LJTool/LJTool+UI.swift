@@ -28,7 +28,7 @@ extension UITableView: LJToolCompatible {
 // MARK: Create UILabel
 extension LJTool where Base: UILabel {
     
-    public static func label(textColor: UIColor = UIColor.lj.text, fontSize: CGFloat = 14) -> UILabel {
+    public static func label(textColor: UIColor = UIColor.lj.text, fontSize: CGFloat = 17) -> UILabel {
         let label = UILabel()
         label.textColor = textColor
         label.font = UIFont.systemFont(ofSize: fontSize)
@@ -40,7 +40,7 @@ extension LJTool where Base: UILabel {
         let label = UILabel()
         label.textColor = textColor
         label.text = "------"
-        label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.font = UIFont.preferredFont(forTextStyle: fontStyle)
         if #available(iOS 10.0, *) {
             label.adjustsFontForContentSizeCategory = true
         }
@@ -64,10 +64,19 @@ extension LJTool where Base: UIImageView {
 // MARK: Create UIButton
 extension LJTool where Base: UIButton {
     
-    public static func button(title: String?, titleColor: UIColor? = UIColor.lj.text, fontSize: CGFloat = 14, image: UIImage?) -> UIButton {
+    public static func button(title: String?, titleColor: UIColor? = UIColor.lj.text, fontSize: CGFloat = 17, image: UIImage?) -> UIButton {
         let button = UIButton(type: .custom)
         button.setTitleColor(titleColor, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+        button.setTitle(title, for: .normal)
+        button.setImage(image, for: .normal)
+        return button
+    }
+    
+    public static func button(title: String?, titleColor: UIColor? = UIColor.lj.text, fontStyle: UIFontTextStyle = .body, image: UIImage?) -> UIButton {
+        let button = UIButton(type: .custom)
+        button.setTitleColor(titleColor, for: .normal)
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: fontStyle)
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
         return button
