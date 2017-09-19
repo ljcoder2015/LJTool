@@ -27,11 +27,13 @@ UIColor.lj.color(r: 10, g: 10, b: 10)
 UIColor.lj.color(0x123456, alpha: 1)
 ```
 一些常用颜色的用法，查看`LJColorViewController`文件
-![lJTool+UIColor](http://image.ljcoder.com/WechatIMG42.jpeg)
+
+![lJTool](http://image.ljcoder.com/WechatIMG42.jpeg)
 
 **2. UI Create**
 可看demo中`LJTool_UICreateViewController`中的用法，创建完后默认会有占位符。
-![LJTool+UI](http://image.ljcoder.com/WechatIMG41.jpeg)
+
+![LJTool](http://image.ljcoder.com/WechatIMG41.jpeg)
 
 - UITableView
 ```swift
