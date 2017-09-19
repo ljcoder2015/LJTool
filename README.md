@@ -77,7 +77,7 @@ fileprivate lazy var commentButton: UIButton = {
 - UITextField
 ```swift
 fileprivate lazy var textField: UITextField = {
-        let textField: UITextField = UITextField.lj_textField(placeholder: "placeholder", leftView: nil, rightView: nil)
+        let textField: UITextField = UITextField.lj.textField(placeholder: "placeholder", leftView: nil, rightView: nil)
         return textField
     }()
 ```
