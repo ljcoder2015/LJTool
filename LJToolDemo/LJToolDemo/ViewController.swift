@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,6 +51,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "UI Create"
         case 2:
             cell.textLabel?.text = "LJTool Image"
+        case 3:
+            cell.textLabel?.text = "LJTool Button"
         default:
             break
         }
@@ -78,6 +80,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 2 {
             let image = LJTool_ImageViewController()
             navigationController?.pushViewController(image, animated: true)
+        }
+        if indexPath.row == 3 {
+            let button = LJButtonViewController()
+            navigationController?.pushViewController(button, animated: true)
         }
     }
 }

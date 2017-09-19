@@ -53,6 +53,7 @@ class LJTableViewCell: UITableViewCell {
         view.backgroundColor = UIColor.lj.line
         return view
     }()
+    
     fileprivate lazy var commentButton: UIButton = {
         let button = UIButton.lj.button(title: "20", titleColor: UIColor.lj.gray999, fontSize: 14, image: #imageLiteral(resourceName: "icon_评论"))
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: -5)

@@ -11,6 +11,7 @@
 		4FA3D3311F70E89D00DBA73E /* LJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */; };
 		4FA3D3341F70E8FA00DBA73E /* LJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */; };
 		4FA3D3371F70EDF900DBA73E /* LJColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3361F70EDF900DBA73E /* LJColorViewController.swift */; };
+		4FA3D33A1F70F9C500DBA73E /* LJButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3391F70F9C500DBA73E /* LJButtonViewController.swift */; };
 		4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8156A1F131FCB00716B85 /* AppDelegate.swift */; };
 		4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8156C1F131FCB00716B85 /* ViewController.swift */; };
 		4FA815701F131FCB00716B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8156E1F131FCB00716B85 /* Main.storyboard */; };
@@ -85,6 +86,7 @@
 		4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJTableViewCell.swift; sourceTree = "<group>"; };
 		4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FA3D3361F70EDF900DBA73E /* LJColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJColorViewController.swift; sourceTree = "<group>"; };
+		4FA3D3391F70F9C500DBA73E /* LJButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJButtonViewController.swift; sourceTree = "<group>"; };
 		4FA815671F131FCB00716B85 /* LJToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA8156A1F131FCB00716B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA8156C1F131FCB00716B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,14 @@
 			name = Color;
 			sourceTree = "<group>";
 		};
+		4FA3D3381F70F9A300DBA73E /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3D3391F70F9C500DBA73E /* LJButtonViewController.swift */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
 		4FA8155E1F131FCB00716B85 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 				4FA3D3351F70EDE100DBA73E /* Color */,
 				4FA3D32D1F70C85400DBA73E /* Image */,
 				4FA3D32C1F70C84700DBA73E /* UICreate */,
+				4FA3D3381F70F9A300DBA73E /* UIButton */,
 				4FA8156A1F131FCB00716B85 /* AppDelegate.swift */,
 				4FA8156E1F131FCB00716B85 /* Main.storyboard */,
 				4FA815711F131FCB00716B85 /* Assets.xcassets */,
@@ -576,6 +587,7 @@
 			files = (
 				4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */,
 				4FA3D3311F70E89D00DBA73E /* LJTableViewCell.swift in Sources */,
+				4FA3D33A1F70F9C500DBA73E /* LJButtonViewController.swift in Sources */,
 				4FA3D3371F70EDF900DBA73E /* LJColorViewController.swift in Sources */,
 				4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */,
 				4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */,
