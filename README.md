@@ -100,6 +100,6 @@ collectionButton.lj.alignImageUpTitleDown()
 string.lj.matchingRegExp("^\\+?(?:[1-9]\\d*(?:\\.\\d{1,2})?|0\\.(?:\\d[1-9]|[1-9]\\d))$")
 ```
 ### 联系我
-有好的建议活反馈可发Issues
+有好的建议或者反馈可发Issues
 
 
