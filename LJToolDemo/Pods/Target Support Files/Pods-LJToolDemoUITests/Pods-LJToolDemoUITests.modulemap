@@ -1,0 +1,6 @@
+framework module Pods_LJToolDemoUITests {
+  umbrella header "Pods-LJToolDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

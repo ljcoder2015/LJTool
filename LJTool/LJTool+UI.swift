@@ -25,6 +25,10 @@ extension UITableView: LJToolCompatible {
     
 }
 
+extension UICollectionView: LJToolCompatible {
+    
+}
+
 // MARK: Create UILabel
 extension LJTool where Base: UILabel {
     
@@ -110,3 +114,13 @@ extension LJTool where Base: UITableView {
     }
 }
 
+// MARK: Create UICollectionView
+extension LJTool where Base: UICollectionView {
+    public static func collectionView(layout: UICollectionViewLayout, dataSource: UICollectionViewDataSource, delegate: UICollectionViewDelegate) -> UICollectionView {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.dataSource = dataSource
+        collectionView.delegate = delegate
+        collectionView.backgroundColor = UIColor.white
+        return collectionView
+    }
+}

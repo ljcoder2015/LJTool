@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */; };
 		4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8156A1F131FCB00716B85 /* AppDelegate.swift */; };
 		4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8156C1F131FCB00716B85 /* ViewController.swift */; };
 		4FA815701F131FCB00716B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8156E1F131FCB00716B85 /* Main.storyboard */; };
@@ -14,10 +15,13 @@
 		4FA815751F131FCB00716B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA815731F131FCB00716B85 /* LaunchScreen.storyboard */; };
 		4FA815801F131FCB00716B85 /* LJToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8157F1F131FCB00716B85 /* LJToolDemoTests.swift */; };
 		4FA8158B1F131FCB00716B85 /* LJToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8158A1F131FCB00716B85 /* LJToolDemoUITests.swift */; };
-		4FA815B21F13506200716B85 /* LJTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; };
-		4FA815B31F13506200716B85 /* LJTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FA815B21F13506200716B85 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; };
+		4FA815B31F13506200716B85 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */; };
 		4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */; };
+		5A83D49FC1B5031543D5FC5E /* Pods_LJToolDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9CD8738281491C454FE8DC /* Pods_LJToolDemoUITests.framework */; };
+		78BA247563830CBFF284ED4A /* Pods_LJToolDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F337EC76F8573C1018F058 /* Pods_LJToolDemo.framework */; };
+		94F2FB1205E931AB27E55640 /* Pods_LJToolDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA6180CD1EA18F9A6174276 /* Pods_LJToolDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4FA815B31F13506200716B85 /* LJTool.framework in Embed Frameworks */,
+				4FA815B31F13506200716B85 /* ReferenceProxy in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +77,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23F337EC76F8573C1018F058 /* Pods_LJToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UIColorExtension.swift"; sourceTree = "<group>"; };
 		4FA815671F131FCB00716B85 /* LJToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA8156A1F131FCB00716B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA8156C1F131FCB00716B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,14 @@
 		4FA815A91F134FD500716B85 /* LJTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJTool.xcodeproj; path = ../LJTool.xcodeproj; sourceTree = "<group>"; };
 		4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UICreateViewController.swift"; sourceTree = "<group>"; };
 		4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+ImageViewController.swift"; sourceTree = "<group>"; };
+		6E9CD8738281491C454FE8DC /* Pods_LJToolDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7EF42B0260A9EA2C42125F /* Pods-LJToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolDemo/Pods-LJToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7E0F089F0E7D9D53C1850DAB /* Pods-LJToolDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolDemoUITests/Pods-LJToolDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87CB6F50A498E99310CA9D17 /* Pods-LJToolDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolDemoTests/Pods-LJToolDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C47AF1310840CCEBED88528 /* Pods-LJToolDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolDemoUITests/Pods-LJToolDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A22D0C77BA88AB94950A3789 /* Pods-LJToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolDemo/Pods-LJToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6878D89109004B9321B581 /* Pods-LJToolDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolDemoTests/Pods-LJToolDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBA6180CD1EA18F9A6174276 /* Pods_LJToolDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA815B21F13506200716B85 /* LJTool.framework in Frameworks */,
+				4FA815B21F13506200716B85 /* ReferenceProxy in Frameworks */,
+				78BA247563830CBFF284ED4A /* Pods_LJToolDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F2FB1205E931AB27E55640 /* Pods_LJToolDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,20 +127,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A83D49FC1B5031543D5FC5E /* Pods_LJToolDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		339BF825C29FB44F966B88B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A22D0C77BA88AB94950A3789 /* Pods-LJToolDemo.debug.xcconfig */,
+				7D7EF42B0260A9EA2C42125F /* Pods-LJToolDemo.release.xcconfig */,
+				CD6878D89109004B9321B581 /* Pods-LJToolDemoTests.debug.xcconfig */,
+				87CB6F50A498E99310CA9D17 /* Pods-LJToolDemoTests.release.xcconfig */,
+				9C47AF1310840CCEBED88528 /* Pods-LJToolDemoUITests.debug.xcconfig */,
+				7E0F089F0E7D9D53C1850DAB /* Pods-LJToolDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FA3D3291F70C7FB00DBA73E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */,
+			);
+			name = Extension;
+			path = LJToolDemo/Extension;
+			sourceTree = "<group>";
+		};
+		4FA3D32C1F70C84700DBA73E /* UICreate */ = {
+			isa = PBXGroup;
+			children = (
+				4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */,
+			);
+			name = UICreate;
+			sourceTree = "<group>";
+		};
+		4FA3D32D1F70C85400DBA73E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		4FA8155E1F131FCB00716B85 = {
 			isa = PBXGroup;
 			children = (
+				4FA3D3291F70C7FB00DBA73E /* Extension */,
 				4FA815691F131FCB00716B85 /* LJToolDemo */,
 				4FA8157E1F131FCB00716B85 /* LJToolDemoTests */,
 				4FA815891F131FCB00716B85 /* LJToolDemoUITests */,
 				4FA815681F131FCB00716B85 /* Products */,
 				4FA815A91F134FD500716B85 /* LJTool.xcodeproj */,
+				339BF825C29FB44F966B88B4 /* Pods */,
+				BB4D2859F3E4FE93DC82E13E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,14 +199,14 @@
 		4FA815691F131FCB00716B85 /* LJToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4FA8156A1F131FCB00716B85 /* AppDelegate.swift */,
 				4FA8156C1F131FCB00716B85 /* ViewController.swift */,
+				4FA3D32D1F70C85400DBA73E /* Image */,
+				4FA3D32C1F70C84700DBA73E /* UICreate */,
+				4FA8156A1F131FCB00716B85 /* AppDelegate.swift */,
 				4FA8156E1F131FCB00716B85 /* Main.storyboard */,
 				4FA815711F131FCB00716B85 /* Assets.xcassets */,
 				4FA815731F131FCB00716B85 /* LaunchScreen.storyboard */,
 				4FA815761F131FCB00716B85 /* Info.plist */,
-				4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */,
-				4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */,
 			);
 			path = LJToolDemo;
 			sourceTree = "<group>";
@@ -180,6 +238,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BB4D2859F3E4FE93DC82E13E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23F337EC76F8573C1018F058 /* Pods_LJToolDemo.framework */,
+				EBA6180CD1EA18F9A6174276 /* Pods_LJToolDemoTests.framework */,
+				6E9CD8738281491C454FE8DC /* Pods_LJToolDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,10 +255,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FA8158F1F131FCC00716B85 /* Build configuration list for PBXNativeTarget "LJToolDemo" */;
 			buildPhases = (
+				248AE7896FDC49FEC64A55F3 /* [CP] Check Pods Manifest.lock */,
 				4FA815631F131FCB00716B85 /* Sources */,
 				4FA815641F131FCB00716B85 /* Frameworks */,
 				4FA815651F131FCB00716B85 /* Resources */,
 				4FA815A81F1321B700716B85 /* Embed Frameworks */,
+				5EF4A13F3BD439DCF17F79FF /* [CP] Embed Pods Frameworks */,
+				C6BFB2F3D10EB57F2293C0D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FA815921F131FCC00716B85 /* Build configuration list for PBXNativeTarget "LJToolDemoTests" */;
 			buildPhases = (
+				284D56F9BD8C61533D7ACC52 /* [CP] Check Pods Manifest.lock */,
 				4FA815771F131FCB00716B85 /* Sources */,
 				4FA815781F131FCB00716B85 /* Frameworks */,
 				4FA815791F131FCB00716B85 /* Resources */,
+				6152A0EBE488FBAA89CB61A5 /* [CP] Embed Pods Frameworks */,
+				D3C97F2DF009EFD760C229DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,9 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FA815951F131FCC00716B85 /* Build configuration list for PBXNativeTarget "LJToolDemoUITests" */;
 			buildPhases = (
+				0AF3942A8D9E0F0B2049D686 /* [CP] Check Pods Manifest.lock */,
 				4FA815821F131FCB00716B85 /* Sources */,
 				4FA815831F131FCB00716B85 /* Frameworks */,
 				4FA815841F131FCB00716B85 /* Resources */,
+				CE0D96D8C7B88753ED7B146B /* [CP] Embed Pods Frameworks */,
+				71F782C73AAFF31DFAA663D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,6 +414,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AF3942A8D9E0F0B2049D686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		248AE7896FDC49FEC64A55F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		284D56F9BD8C61533D7ACC52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EF4A13F3BD439DCF17F79FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJToolDemo/Pods-LJToolDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6152A0EBE488FBAA89CB61A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJToolDemoTests/Pods-LJToolDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71F782C73AAFF31DFAA663D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJToolDemoUITests/Pods-LJToolDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6BFB2F3D10EB57F2293C0D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJToolDemo/Pods-LJToolDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0D96D8C7B88753ED7B146B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJToolDemoUITests/Pods-LJToolDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C97F2DF009EFD760C229DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LJToolDemoTests/Pods-LJToolDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FA815631F131FCB00716B85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,6 +559,7 @@
 			files = (
 				4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */,
 				4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */,
+				4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */,
 				4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */,
 				4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */,
 			);
@@ -500,6 +716,7 @@
 		};
 		4FA815901F131FCC00716B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22D0C77BA88AB94950A3789 /* Pods-LJToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -515,6 +732,7 @@
 		};
 		4FA815911F131FCC00716B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7EF42B0260A9EA2C42125F /* Pods-LJToolDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -530,6 +748,7 @@
 		};
 		4FA815931F131FCC00716B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6878D89109004B9321B581 /* Pods-LJToolDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +764,7 @@
 		};
 		4FA815941F131FCC00716B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CB6F50A498E99310CA9D17 /* Pods-LJToolDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +780,7 @@
 		};
 		4FA815961F131FCC00716B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C47AF1310840CCEBED88528 /* Pods-LJToolDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5375HS528S;
@@ -574,6 +795,7 @@
 		};
 		4FA815971F131FCC00716B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0F089F0E7D9D53C1850DAB /* Pods-LJToolDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5375HS528S;

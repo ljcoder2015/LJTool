@@ -49,7 +49,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "UI Create"
         case 1:
             cell.textLabel?.text = "LJTool Image"
-        case 0:
+        case 2:
             cell.textLabel?.text = "LJTool String"
         default:
             break
