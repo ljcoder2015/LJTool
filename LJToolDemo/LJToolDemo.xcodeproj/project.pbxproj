@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */; };
+		4FA3D3311F70E89D00DBA73E /* LJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */; };
+		4FA3D3341F70E8FA00DBA73E /* LJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */; };
+		4FA3D3371F70EDF900DBA73E /* LJColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3361F70EDF900DBA73E /* LJColorViewController.swift */; };
 		4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8156A1F131FCB00716B85 /* AppDelegate.swift */; };
 		4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8156C1F131FCB00716B85 /* ViewController.swift */; };
 		4FA815701F131FCB00716B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8156E1F131FCB00716B85 /* Main.storyboard */; };
@@ -15,8 +18,8 @@
 		4FA815751F131FCB00716B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA815731F131FCB00716B85 /* LaunchScreen.storyboard */; };
 		4FA815801F131FCB00716B85 /* LJToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8157F1F131FCB00716B85 /* LJToolDemoTests.swift */; };
 		4FA8158B1F131FCB00716B85 /* LJToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8158A1F131FCB00716B85 /* LJToolDemoUITests.swift */; };
-		4FA815B21F13506200716B85 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; };
-		4FA815B31F13506200716B85 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FA815B21F13506200716B85 /* LJTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; };
+		4FA815B31F13506200716B85 /* LJTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA815AF1F134FD600716B85 /* LJTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */; };
 		4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */; };
 		5A83D49FC1B5031543D5FC5E /* Pods_LJToolDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9CD8738281491C454FE8DC /* Pods_LJToolDemoUITests.framework */; };
@@ -69,7 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4FA815B31F13506200716B85 /* ReferenceProxy in Embed Frameworks */,
+				4FA815B31F13506200716B85 /* LJTool.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +82,9 @@
 /* Begin PBXFileReference section */
 		23F337EC76F8573C1018F058 /* Pods_LJToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UIColorExtension.swift"; sourceTree = "<group>"; };
+		4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJTableViewCell.swift; sourceTree = "<group>"; };
+		4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FA3D3361F70EDF900DBA73E /* LJColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJColorViewController.swift; sourceTree = "<group>"; };
 		4FA815671F131FCB00716B85 /* LJToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA8156A1F131FCB00716B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA8156C1F131FCB00716B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FA815B21F13506200716B85 /* ReferenceProxy in Frameworks */,
+				4FA815B21F13506200716B85 /* LJTool.framework in Frameworks */,
 				78BA247563830CBFF284ED4A /* Pods_LJToolDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				4FB500D21F1753C100E92CC4 /* LJTool+UICreateViewController.swift */,
+				4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */,
+				4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */,
 			);
 			name = UICreate;
 			sourceTree = "<group>";
@@ -170,6 +178,14 @@
 				4FB500D51F175E2100E92CC4 /* LJTool+ImageViewController.swift */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		4FA3D3351F70EDE100DBA73E /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3D3361F70EDF900DBA73E /* LJColorViewController.swift */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 		4FA8155E1F131FCB00716B85 = {
@@ -200,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				4FA8156C1F131FCB00716B85 /* ViewController.swift */,
+				4FA3D3351F70EDE100DBA73E /* Color */,
 				4FA3D32D1F70C85400DBA73E /* Image */,
 				4FA3D32C1F70C84700DBA73E /* UICreate */,
 				4FA8156A1F131FCB00716B85 /* AppDelegate.swift */,
@@ -558,10 +575,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FB500D61F175E2100E92CC4 /* LJTool+ImageViewController.swift in Sources */,
+				4FA3D3311F70E89D00DBA73E /* LJTableViewCell.swift in Sources */,
+				4FA3D3371F70EDF900DBA73E /* LJColorViewController.swift in Sources */,
 				4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */,
 				4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */,
 				4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */,
 				4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */,
+				4FA3D3341F70E8FA00DBA73E /* LJCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

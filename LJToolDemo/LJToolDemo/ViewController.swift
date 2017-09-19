@@ -39,18 +39,18 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "UI Create"
+            cell.textLabel?.text = "UI Color"
         case 1:
-            cell.textLabel?.text = "LJTool Image"
+            cell.textLabel?.text = "UI Create"
         case 2:
-            cell.textLabel?.text = "LJTool String"
+            cell.textLabel?.text = "LJTool Image"
         default:
             break
         }
@@ -68,10 +68,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
+            let color = LJColorViewController()
+            navigationController?.pushViewController(color, animated: true)
+        }
+        if indexPath.row == 1 {
             let UI = LJTool_UICreateViewController()
             navigationController?.pushViewController(UI, animated: true)
         }
-        if indexPath.row == 1 {
+        if indexPath.row == 2 {
             let image = LJTool_ImageViewController()
             navigationController?.pushViewController(image, animated: true)
         }
