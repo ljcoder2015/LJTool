@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,6 +53,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "LJTool Image"
         case 3:
             cell.textLabel?.text = "LJTool Button"
+        case 4:
+            cell.textLabel?.text = "LJTool String"
         default:
             break
         }
@@ -65,6 +67,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.001
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return nil
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -84,6 +90,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 3 {
             let button = LJButtonViewController()
             navigationController?.pushViewController(button, animated: true)
+        }
+        if indexPath.row == 4 {
+            let string = LJStringViewController()
+            navigationController?.pushViewController(string, animated: true)
         }
     }
 }

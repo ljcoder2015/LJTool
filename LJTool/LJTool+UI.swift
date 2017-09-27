@@ -104,7 +104,7 @@ extension LJTool where Base: UITextField {
 // MARK: Create UITableView
 extension LJTool where Base: UITableView {
     
-    public static func tableView(style: UITableViewStyle = .plain, dataSource: UITableViewDataSource, delegate: UITableViewDelegate) -> UITableView {
+    public static func tableView(style: UITableViewStyle = .grouped, dataSource: UITableViewDataSource, delegate: UITableViewDelegate) -> UITableView {
         let tableView = UITableView(frame: .zero, style: style)
         tableView.dataSource = dataSource
         tableView.delegate = delegate

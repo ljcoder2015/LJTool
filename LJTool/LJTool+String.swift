@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String: LJToolCompatible {
     
@@ -38,5 +39,11 @@ extension LJTool where Base == String {
             return dict as! NSDictionary
         }
         return NSDictionary()
+    }
+    
+    // 根据字体计算size
+    public func size(drawIn size: CGSize, font: UIFont, options: NSStringDrawingOptions = .usesLineFragmentOrigin) -> CGSize {
+        let bounds = NSString(string: base).boundingRect(with: size, options: options, attributes: [NSFontAttributeName: font], context: nil)
+        return bounds.size
     }
 }

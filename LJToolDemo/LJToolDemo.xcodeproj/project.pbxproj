@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F9C4CFE1F7B461F00A30EDF /* LJStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C4CFD1F7B461F00A30EDF /* LJStringViewController.swift */; };
 		4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */; };
 		4FA3D3311F70E89D00DBA73E /* LJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */; };
 		4FA3D3341F70E8FA00DBA73E /* LJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */; };
@@ -82,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		23F337EC76F8573C1018F058 /* Pods_LJToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F9C4CFD1F7B461F00A30EDF /* LJStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJStringViewController.swift; sourceTree = "<group>"; };
 		4FA3D32A1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UIColorExtension.swift"; sourceTree = "<group>"; };
 		4FA3D3301F70E89D00DBA73E /* LJTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJTableViewCell.swift; sourceTree = "<group>"; };
 		4FA3D3331F70E8FA00DBA73E /* LJCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 				7E0F089F0E7D9D53C1850DAB /* Pods-LJToolDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F9C4CFB1F7B45F900A30EDF /* String */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C4CFD1F7B461F00A30EDF /* LJStringViewController.swift */,
+			);
+			name = String;
 			sourceTree = "<group>";
 		};
 		4FA3D3291F70C7FB00DBA73E /* Extension */ = {
@@ -230,6 +240,7 @@
 				4FA3D32D1F70C85400DBA73E /* Image */,
 				4FA3D32C1F70C84700DBA73E /* UICreate */,
 				4FA3D3381F70F9A300DBA73E /* UIButton */,
+				4F9C4CFB1F7B45F900A30EDF /* String */,
 				4FA8156A1F131FCB00716B85 /* AppDelegate.swift */,
 				4FA8156E1F131FCB00716B85 /* Main.storyboard */,
 				4FA815711F131FCB00716B85 /* Assets.xcassets */,
@@ -592,6 +603,7 @@
 				4FA8156D1F131FCB00716B85 /* ViewController.swift in Sources */,
 				4FA3D32B1F70C7FB00DBA73E /* LJTool+UIColorExtension.swift in Sources */,
 				4FA8156B1F131FCB00716B85 /* AppDelegate.swift in Sources */,
+				4F9C4CFE1F7B461F00A30EDF /* LJStringViewController.swift in Sources */,
 				4FB500D31F1753C100E92CC4 /* LJTool+UICreateViewController.swift in Sources */,
 				4FA3D3341F70E8FA00DBA73E /* LJCollectionViewCell.swift in Sources */,
 			);
