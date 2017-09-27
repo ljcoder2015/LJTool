@@ -2,9 +2,9 @@
 
 ### [LJTool](https://github.com/ljcoder2015/LJTool)简介
 在开发过程中，有一些常用扩展每次都会用到，每次拷贝来拷贝去，有点烦了，就封装成了一个工具库，使用pod来管理，方便多了。LJTool主要分成三大块：
-	1. 配色类，封装了一些常用的颜色。
-	2. 控件初始化，把控件的创建和常用的属性设置封装了一下，并且加了一些占位符
-	3. 其它，包括图片的创建和button的内容排列方式
+1. 配色类，封装了一些常用的颜色。
+2. 控件初始化，把控件的创建和常用的属性设置封装了一下，并且加了一些占位符
+3. 其它，包括图片的创建和button的内容排列方式
 	
 ### 安装
 在`Podfile`加入
@@ -77,7 +77,7 @@ fileprivate lazy var commentButton: UIButton = {
 - UITextField
 ```swift
 fileprivate lazy var textField: UITextField = {
-        let textField: UITextField = UITextField.lj_textField(placeholder: "placeholder", leftView: nil, rightView: nil)
+        let textField: UITextField = UITextField.lj.textField(placeholder: "placeholder", leftView: nil, rightView: nil)
         return textField
     }()
 ```
