@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LJTool"
-  s.version      = "2.0.1"
+  s.version      = "2.0.2"
   s.summary      = "Common tools library"
   s.description  = "LJTool, Help you more convenient and quick development"
   s.homepage     = "http://www.ljcoder.com/2017/07/10/LJTool/"
@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
