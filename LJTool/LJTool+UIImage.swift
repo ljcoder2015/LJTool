@@ -29,7 +29,7 @@ extension LJTool where Base: UIImage {
         // 获取二维码图片
         let outputImage = filter?.outputImage
         let transform = CGAffineTransform(scaleX: 10, y: 10)
-        let transformImage = outputImage?.applying(transform)
+        let transformImage = outputImage?.transformed(by: transform)
         
         //保存二维码图片
         guard let image = transformImage else {
