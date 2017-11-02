@@ -163,12 +163,13 @@
 					4FA8153F1F131E2A00716B85 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 5375HS528S;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					4FA815481F131E2B00716B85 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 5375HS528S;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -373,6 +374,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+<<<<<<< HEAD
+=======
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+>>>>>>> 5f835b262ec310bcdb1cad92a423175e15f1e259
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -394,6 +399,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljcoder.LJTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+<<<<<<< HEAD
+=======
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+>>>>>>> 5f835b262ec310bcdb1cad92a423175e15f1e259
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -407,7 +416,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljcoder.LJToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -420,7 +430,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljcoder.LJToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
