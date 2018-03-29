@@ -15,6 +15,7 @@
 		4FA815B91F137E8100716B85 /* LJTool+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA815B81F137E8100716B85 /* LJTool+UIButton.swift */; };
 		4FA815BB1F1383DF00716B85 /* LJTool+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA815BA1F1383DF00716B85 /* LJTool+String.swift */; };
 		4FA815BD1F1388D800716B85 /* LJTool+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA815BC1F1388D800716B85 /* LJTool+UI.swift */; };
+		593704DD206C981100846300 /* LJTool+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593704DC206C981100846300 /* LJTool+Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		4FA815B81F137E8100716B85 /* LJTool+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UIButton.swift"; sourceTree = "<group>"; };
 		4FA815BA1F1383DF00716B85 /* LJTool+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+String.swift"; sourceTree = "<group>"; };
 		4FA815BC1F1388D800716B85 /* LJTool+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UI.swift"; sourceTree = "<group>"; };
+		593704DC206C981100846300 /* LJTool+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LJTool+Date.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				4FA815B81F137E8100716B85 /* LJTool+UIButton.swift */,
 				4FA815BA1F1383DF00716B85 /* LJTool+String.swift */,
 				4FA815BC1F1388D800716B85 /* LJTool+UI.swift */,
+				593704DC206C981100846300 /* LJTool+Date.swift */,
 				4FA815441F131E2B00716B85 /* Info.plist */,
 			);
 			path = LJTool;
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA815BB1F1383DF00716B85 /* LJTool+String.swift in Sources */,
+				593704DD206C981100846300 /* LJTool+Date.swift in Sources */,
 				4FA8155C1F131F5D00716B85 /* LJTool.swift in Sources */,
 				4FA815B91F137E8100716B85 /* LJTool+UIButton.swift in Sources */,
 				4FA8155D1F131F5D00716B85 /* LJTool+UIImage.swift in Sources */,
@@ -374,10 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-<<<<<<< HEAD
-=======
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
->>>>>>> 5f835b262ec310bcdb1cad92a423175e15f1e259
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -399,10 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljcoder.LJTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-<<<<<<< HEAD
-=======
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
->>>>>>> 5f835b262ec310bcdb1cad92a423175e15f1e259
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

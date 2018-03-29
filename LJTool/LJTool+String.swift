@@ -15,6 +15,12 @@ extension String: LJToolCompatible {
 
 extension LJTool where Base == String {
     
+
+    /// 字符串长度
+    var length: Int {
+        return base.count
+    }
+    
     /// 匹配正则表达式
     ///
     /// - Parameter regExp: 正则表达式
@@ -24,7 +30,7 @@ extension LJTool where Base == String {
         return predicate.evaluate(with: base)
     }
     
-    // 保留两位小数，
+    // 保留两位小数，是否为价格
     var isPrice: Bool {
         return base.lj.matchingRegExp("^\\+?(?:[1-9]\\d*(?:\\.\\d{1,2})?|0\\.(?:\\d[1-9]|[1-9]\\d))$")
     }
@@ -47,3 +53,4 @@ extension LJTool where Base == String {
         return bounds.size
     }
 }
+
