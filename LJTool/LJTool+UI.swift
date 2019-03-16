@@ -40,7 +40,7 @@ extension LJTool where Base: UILabel {
         return label
     }
     
-    public static func label(textColor: UIColor = UIColor.lj.text, fontStyle: UIFontTextStyle = .body) -> UILabel {
+    public static func label(textColor: UIColor = UIColor.lj.text, fontStyle: UIFont.TextStyle = .body) -> UILabel {
         let label = UILabel()
         label.textColor = textColor
         label.text = "------"
@@ -77,7 +77,7 @@ extension LJTool where Base: UIButton {
         return button
     }
     
-    public static func button(title: String?, titleColor: UIColor?, fontStyle: UIFontTextStyle = .body, image: UIImage?) -> UIButton {
+    public static func button(title: String?, titleColor: UIColor?, fontStyle: UIFont.TextStyle = .body, image: UIImage?) -> UIButton {
         let button = UIButton(type: .custom)
         button.setTitleColor(titleColor, for: .normal)
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: fontStyle)
@@ -104,7 +104,7 @@ extension LJTool where Base: UITextField {
 // MARK: Create UITableView
 extension LJTool where Base: UITableView {
     
-    public static func tableView(style: UITableViewStyle = .grouped, dataSource: UITableViewDataSource, delegate: UITableViewDelegate) -> UITableView {
+    public static func tableView(style: UITableView.Style = .grouped, dataSource: UITableViewDataSource, delegate: UITableViewDelegate) -> UITableView {
         let tableView = UITableView(frame: .zero, style: style)
         tableView.dataSource = dataSource
         tableView.delegate = delegate

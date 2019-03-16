@@ -49,7 +49,7 @@ extension LJTool where Base == String {
     
     // 根据字体计算size
     public func size(drawIn size: CGSize, font: UIFont, options: NSStringDrawingOptions = .usesLineFragmentOrigin) -> CGSize {
-        let bounds = NSString(string: base).boundingRect(with: size, options: options, attributes: [NSAttributedStringKey.font: font], context: nil)
+        let bounds = NSString(string: base).boundingRect(with: size, options: options, attributes: [NSAttributedString.Key.font: font], context: nil)
         return bounds.size
     }
 }
