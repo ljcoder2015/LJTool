@@ -9,29 +9,6 @@
 import Foundation
 import UIKit
 
-// MARK: Create UILabel
-extension LJTool where Base: UILabel {
-    
-    public static func label(textColor: UIColor, fontSize: CGFloat = 17) -> UILabel {
-        let label = UILabel()
-        label.textColor = textColor
-        label.font = UIFont.systemFont(ofSize: fontSize)
-        label.text = "------"
-        return label
-    }
-    
-    public static func label(textColor: UIColor = StyleBasic.cg_6, fontStyle: UIFont.TextStyle = .body) -> UILabel {
-        let label = UILabel()
-        label.textColor = textColor
-        label.text = "------"
-        label.font = UIFont.preferredFont(forTextStyle: fontStyle)
-        if #available(iOS 10.0, *) {
-            label.adjustsFontForContentSizeCategory = true
-        }
-        return label
-    }
-}
-
 // MARK: Create UIImageView
 extension LJTool where Base: UIImageView {
     
@@ -48,19 +25,8 @@ extension LJTool where Base: UIImageView {
 // MARK: Create UIButton
 extension LJTool where Base: UIButton {
     
-    public static func button(title: String?, titleColor: UIColor?, fontSize: CGFloat, image: UIImage?) -> UIButton {
+    public static func button(title: String?, image: UIImage?) -> UIButton {
         let button = UIButton(type: .custom)
-        button.setTitleColor(titleColor, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
-        button.setTitle(title, for: .normal)
-        button.setImage(image, for: .normal)
-        return button
-    }
-    
-    public static func button(title: String?, titleColor: UIColor?, fontStyle: UIFont.TextStyle = .body, image: UIImage?) -> UIButton {
-        let button = UIButton(type: .custom)
-        button.setTitleColor(titleColor, for: .normal)
-        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: fontStyle)
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
         return button
