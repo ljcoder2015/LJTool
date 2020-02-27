@@ -9,26 +9,6 @@
 import Foundation
 import UIKit
 
-extension UILabel: LJToolCompatible {
-    
-}
-
-extension UIImageView: LJToolCompatible {
-
-}
-
-extension UITextField: LJToolCompatible {
-    
-}
-
-extension UITableView: LJToolCompatible {
-    
-}
-
-extension UICollectionView: LJToolCompatible {
-    
-}
-
 // MARK: Create UILabel
 extension LJTool where Base: UILabel {
     
@@ -40,7 +20,7 @@ extension LJTool where Base: UILabel {
         return label
     }
     
-    public static func label(textColor: UIColor = UIColor.lj.text, fontStyle: UIFont.TextStyle = .body) -> UILabel {
+    public static func label(textColor: UIColor = StyleBasic.cg_6, fontStyle: UIFont.TextStyle = .body) -> UILabel {
         let label = UILabel()
         label.textColor = textColor
         label.text = "------"
@@ -58,7 +38,7 @@ extension LJTool where Base: UIImageView {
     public static func imageView(image: UIImage? = nil) -> UIImageView {
         let imageView = UIImageView(image: image)
         if image == nil {
-            imageView.image = UIImage.lj.image(with: UIColor.lj.gray)
+            imageView.image = UIImage.lj.image(with: StyleBasic.cg_6)
         }
         return imageView
     }
@@ -108,8 +88,8 @@ extension LJTool where Base: UITableView {
         let tableView = UITableView(frame: .zero, style: style)
         tableView.dataSource = dataSource
         tableView.delegate = delegate
-        tableView.separatorColor = UIColor.lj.gray
-        tableView.separatorInset = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: 0)
+        tableView.separatorColor = StyleBasic.cg_6
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         return tableView
     }
 }

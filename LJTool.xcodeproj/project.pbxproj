@@ -15,6 +15,7 @@
 		4FA815B91F137E8100716B85 /* LJTool+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA815B81F137E8100716B85 /* LJTool+UIButton.swift */; };
 		4FA815BB1F1383DF00716B85 /* LJTool+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA815BA1F1383DF00716B85 /* LJTool+String.swift */; };
 		4FA815BD1F1388D800716B85 /* LJTool+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA815BC1F1388D800716B85 /* LJTool+UI.swift */; };
+		592F34B024064D3700977BC7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592F34AF24064D3700977BC7 /* Style.swift */; };
 		593704DD206C981100846300 /* LJTool+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593704DC206C981100846300 /* LJTool+Date.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		4FA815B81F137E8100716B85 /* LJTool+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UIButton.swift"; sourceTree = "<group>"; };
 		4FA815BA1F1383DF00716B85 /* LJTool+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+String.swift"; sourceTree = "<group>"; };
 		4FA815BC1F1388D800716B85 /* LJTool+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LJTool+UI.swift"; sourceTree = "<group>"; };
+		592F34AF24064D3700977BC7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		593704DC206C981100846300 /* LJTool+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LJTool+Date.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		4FA815421F131E2B00716B85 /* LJTool */ = {
 			isa = PBXGroup;
 			children = (
+				592F34AF24064D3700977BC7 /* Style.swift */,
 				4FA8155A1F131F5D00716B85 /* LJTool.swift */,
 				4FA8155B1F131F5D00716B85 /* LJTool+UIImage.swift */,
 				4FA815B61F1378A500716B85 /* LJTool+UIColor.swift */,
@@ -160,26 +163,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = ljcoder;
 				TargetAttributes = {
 					4FA8153F1F131E2A00716B85 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 5375HS528S;
+						DevelopmentTeam = WW6UD727NP;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					4FA815481F131E2B00716B85 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 5375HS528S;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = WW6UD727NP;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 4FA8153A1F131E2A00716B85 /* Build configuration list for PBXProject "LJTool" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -224,6 +227,7 @@
 				4FA815B91F137E8100716B85 /* LJTool+UIButton.swift in Sources */,
 				4FA8155D1F131F5D00716B85 /* LJTool+UIImage.swift in Sources */,
 				4FA815B71F1378A500716B85 /* LJTool+UIColor.swift in Sources */,
+				592F34B024064D3700977BC7 /* Style.swift in Sources */,
 				4FA815BD1F1388D800716B85 /* LJTool+UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -313,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -370,7 +376,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5375HS528S;
+				DEVELOPMENT_TEAM = WW6UD727NP;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -383,7 +389,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -393,7 +399,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5375HS528S;
+				DEVELOPMENT_TEAM = WW6UD727NP;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -405,7 +411,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -413,13 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 5375HS528S;
+				DEVELOPMENT_TEAM = WW6UD727NP;
 				INFOPLIST_FILE = LJToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljcoder.LJToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -427,13 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 5375HS528S;
+				DEVELOPMENT_TEAM = WW6UD727NP;
 				INFOPLIST_FILE = LJToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljcoder.LJToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
