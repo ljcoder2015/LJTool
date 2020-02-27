@@ -9,10 +9,6 @@
 import Foundation
 import UIKit
 
-extension UIButton: LJToolCompatible {
-    
-}
-
 extension LJTool where Base: UIButton {
     
     public func alignImageUpTitleDown(_ padding: CGFloat = 5) {

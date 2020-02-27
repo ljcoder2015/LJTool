@@ -387,3 +387,83 @@ extension LJTool where Base: UIButton {
         }
     }
 }
+
+extension LJTool where Base: UITextField {
+    /// 一级信息色
+    @discardableResult
+    func primaryInfo() -> Self {
+        switch Style.currentStyle {
+        case .light:
+            base.textColor = StyleBasic.cd_1
+            return self
+        case .dark:
+            base.textColor = StyleBasic.cw_1
+            return self
+        }
+    }
+    
+    /// 二级信息色
+    @discardableResult
+    func secondaryInfo() -> Self {
+        switch Style.currentStyle {
+        case .light:
+            base.textColor = StyleBasic.cg_2
+            return self
+        case .dark:
+            base.textColor = StyleBasic.cg_4
+            return self
+        }
+    }
+    
+    /// 三级信息色
+    @discardableResult
+    func tertiaryInfo() -> Self {
+        switch Style.currentStyle {
+        case .light:
+            base.textColor = StyleBasic.cg_3
+            return self
+        case .dark:
+            base.textColor = StyleBasic.cg_3
+            return self
+        }
+    }
+    
+    /// 四级信息色
+    @discardableResult
+    func quaternaryInfo() -> Self {
+        switch Style.currentStyle {
+        case .light:
+            base.textColor = StyleBasic.cg_4
+            return self
+        case .dark:
+            base.textColor = StyleBasic.cg_2
+            return self
+        }
+    }
+    
+    /// 类一级信息色
+    @discardableResult
+    func primaryLikeInfo() -> Self {
+        switch Style.currentStyle {
+        case .light:
+            base.textColor = StyleBasic.cg_13
+            return self
+        case .dark:
+            base.textColor = StyleBasic.cw_1
+            return self
+        }
+    }
+    
+    /// 藏青色
+    @discardableResult
+    func navyBlue() -> Self {
+        switch Style.currentStyle {
+        case .light:
+            base.textColor = StyleBasic.cb_3
+            return self
+        case .dark:
+            base.textColor = StyleBasic.cw_1
+            return self
+        }
+    }
+}
