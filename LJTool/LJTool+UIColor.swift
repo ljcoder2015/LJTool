@@ -28,7 +28,7 @@ extension UIView: LJToolCompatible {
     
 }
 
-extension LJTool where Base: UIView {
+public extension LJTool where Base: UIView {
     /// 设置一级背景
     @discardableResult
     func primaryBackground() -> Self {
@@ -199,7 +199,7 @@ extension LJTool where Base: UIView {
     }
 }
 
-extension LJTool where Base: UINavigationBar {
+public extension LJTool where Base: UINavigationBar {
     
     /// 黑色导航栏
     @discardableResult
@@ -228,7 +228,7 @@ extension LJTool where Base: UINavigationBar {
     }
 }
 
-extension LJTool where Base: UILabel {
+public extension LJTool where Base: UILabel {
     /// 一级信息色
     @discardableResult
     func primaryInfo() -> Self {
@@ -308,7 +308,7 @@ extension LJTool where Base: UILabel {
     }
 }
 
-extension LJTool where Base: UIButton {
+public extension LJTool where Base: UIButton {
     /// 一级信息色
     @discardableResult
     func primaryInfo() -> Self {
@@ -388,7 +388,7 @@ extension LJTool where Base: UIButton {
     }
 }
 
-extension LJTool where Base: UITextField {
+public extension LJTool where Base: UITextField {
     /// 一级信息色
     @discardableResult
     func primaryInfo() -> Self {
