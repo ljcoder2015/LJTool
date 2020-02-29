@@ -26,17 +26,18 @@ class LJTableViewCell: UITableViewCell {
     }()
     
     fileprivate lazy var userNameLabel: UILabel = {
-        let label = UILabel.lj.label(textColor: UIColor.lj.color(0xf3c02f), fontStyle: UIFontTextStyle.headline)
+        let label = UILabel()
+        label.lj.primaryBackground().primaryInfo()
         return label
     }()
     
     fileprivate lazy var dateLabel: UILabel = {
-        let label = UILabel.lj.label(textColor: UIColor.lj.gray999, fontStyle: UIFontTextStyle.footnote)
+        let label = UILabel()
         return label
     }()
     
     fileprivate lazy var contentLabel: UILabel = {
-        let label = UILabel.lj.label(textColor: UIColor.lj.text, fontStyle: UIFontTextStyle.body)
+        let label = UILabel()
         label.numberOfLines = 5
         return label
     }()
@@ -50,30 +51,30 @@ class LJTableViewCell: UITableViewCell {
     
     fileprivate lazy var lineView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.lj.line
+        view.lj.elevatedPrimaryBackground()
         return view
     }()
     
     fileprivate lazy var commentButton: UIButton = {
-        let button = UIButton.lj.button(title: "20", titleColor: UIColor.lj.gray999, fontSize: 14, image: #imageLiteral(resourceName: "icon_评论"))
+        let button = UIButton.lj.button(title: "20", image: #imageLiteral(resourceName: "icon_评论"))
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: -5)
         button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
         return button
     }()
     fileprivate lazy var collectionButton: UIButton = {
-        let button = UIButton.lj.button(title: "31", titleColor: UIColor.lj.gray999, fontSize: 14, image: #imageLiteral(resourceName: "icon_收藏"))
+        let button = UIButton.lj.button(title: "31", image: #imageLiteral(resourceName: "icon_收藏"))
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: -5)
         button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
         return button
     }()
     fileprivate lazy var shareButton: UIButton = {
-        let button = UIButton.lj.button(title: "31", titleColor: UIColor.lj.gray999, fontSize: 14, image: #imageLiteral(resourceName: "icon_分享"))
+        let button = UIButton.lj.button(title: "31", image: #imageLiteral(resourceName: "icon_分享"))
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: -5)
         button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
         return button
     }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setup()

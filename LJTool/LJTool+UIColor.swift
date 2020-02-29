@@ -28,10 +28,10 @@ extension UIView: LJToolCompatible {
     
 }
 
-public extension LJTool where Base: UIView {
+extension LJTool where Base: UIView {
     /// 设置一级背景
     @discardableResult
-    func primaryBackground() -> Self {
+    public func primaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -44,7 +44,7 @@ public extension LJTool where Base: UIView {
     
     /// 设置二级背景
     @discardableResult
-    func secondaryBackground() -> Self {
+    public func secondaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cg_6
@@ -57,7 +57,7 @@ public extension LJTool where Base: UIView {
 
     /// 设置三级背景
     @discardableResult
-    func tertiaryBackground() -> Self {
+    public func tertiaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -70,7 +70,7 @@ public extension LJTool where Base: UIView {
 
     /// 设置升起的一级背景
     @discardableResult
-    func elevatedPrimaryBackground() -> Self {
+    public func elevatedPrimaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -83,7 +83,7 @@ public extension LJTool where Base: UIView {
 
     /// 设置升起的二级背景
     @discardableResult
-    func elevatedSecondaryBackground() -> Self {
+    public func elevatedSecondaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cg_6
@@ -96,7 +96,7 @@ public extension LJTool where Base: UIView {
 
     /// 设置升起的三级背景
     @discardableResult
-    func elevatedTertiaryBackground() -> Self {
+    public func elevatedTertiaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -109,7 +109,7 @@ public extension LJTool where Base: UIView {
     
     /// 少儿一级级背景
     @discardableResult
-    func kidPrimaryBackground() -> Self {
+    public func kidPrimaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -122,7 +122,7 @@ public extension LJTool where Base: UIView {
     
     /// 四级背景
     @discardableResult
-    func quaternaryBackground() -> Self {
+    public func quaternaryBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cg_19
@@ -135,7 +135,7 @@ public extension LJTool where Base: UIView {
     
     /// 一级组块背景
     @discardableResult
-    func primaryGroupedBackground() -> Self {
+    public func primaryGroupedBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cg_6
@@ -148,7 +148,7 @@ public extension LJTool where Base: UIView {
     
     /// 二级组块背景
     @discardableResult
-    func secondaryGroupedBackground() -> Self {
+    public func secondaryGroupedBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -161,7 +161,7 @@ public extension LJTool where Base: UIView {
     
     /// 三级组块背景
     @discardableResult
-    func tertiaryGroupedBackground() -> Self {
+    public func tertiaryGroupedBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cg_6
@@ -174,7 +174,7 @@ public extension LJTool where Base: UIView {
     
     /// 升起一级组块背景
     @discardableResult
-    func elevatedPrimaryGroupedBackground() -> Self {
+    public func elevatedPrimaryGroupedBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cg_6
@@ -187,7 +187,7 @@ public extension LJTool where Base: UIView {
     
     /// 升起二级组块背景
     @discardableResult
-    func elevatedSecondaryGroupedBackground() -> Self {
+    public func elevatedSecondaryGroupedBackground() -> Self {
         switch Style.currentStyle {
         case .light:
             base.backgroundColor = StyleBasic.cw_1
@@ -199,11 +199,11 @@ public extension LJTool where Base: UIView {
     }
 }
 
-public extension LJTool where Base: UINavigationBar {
+extension LJTool where Base: UINavigationBar {
     
     /// 黑色导航栏
     @discardableResult
-    func blackNavigationBar() -> Self {
+    public func blackNavigationBar() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setBackgroundImage(UIImage.lj.image(with: StyleBasic.cg_1), for: .default)
@@ -216,7 +216,7 @@ public extension LJTool where Base: UINavigationBar {
     
     /// 白色导航栏
     @discardableResult
-    func whiteNavigationBar() -> Self {
+    public func whiteNavigationBar() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setBackgroundImage(UIImage.lj.image(with: StyleBasic.cw_1), for: .default)
@@ -228,10 +228,10 @@ public extension LJTool where Base: UINavigationBar {
     }
 }
 
-public extension LJTool where Base: UILabel {
+extension LJTool where Base: UILabel {
     /// 一级信息色
     @discardableResult
-    func primaryInfo() -> Self {
+    public func primaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cd_1
@@ -244,7 +244,7 @@ public extension LJTool where Base: UILabel {
     
     /// 二级信息色
     @discardableResult
-    func secondaryInfo() -> Self {
+    public func secondaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_2
@@ -257,7 +257,7 @@ public extension LJTool where Base: UILabel {
     
     /// 三级信息色
     @discardableResult
-    func tertiaryInfo() -> Self {
+    public func tertiaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_3
@@ -270,7 +270,7 @@ public extension LJTool where Base: UILabel {
     
     /// 四级信息色
     @discardableResult
-    func quaternaryInfo() -> Self {
+    public func quaternaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_4
@@ -283,7 +283,7 @@ public extension LJTool where Base: UILabel {
     
     /// 类一级信息色
     @discardableResult
-    func primaryLikeInfo() -> Self {
+    public func primaryLikeInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_13
@@ -296,7 +296,7 @@ public extension LJTool where Base: UILabel {
     
     /// 藏青色
     @discardableResult
-    func navyBlue() -> Self {
+    public func navyBlue() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cb_3
@@ -308,10 +308,10 @@ public extension LJTool where Base: UILabel {
     }
 }
 
-public extension LJTool where Base: UIButton {
+extension LJTool where Base: UIButton {
     /// 一级信息色
     @discardableResult
-    func primaryInfo() -> Self {
+    public func primaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setTitleColor(StyleBasic.cd_1, for: .normal)
@@ -324,7 +324,7 @@ public extension LJTool where Base: UIButton {
     
     /// 二级信息色
     @discardableResult
-    func secondaryInfo() -> Self {
+    public func secondaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setTitleColor(StyleBasic.cg_2, for: .normal)
@@ -337,7 +337,7 @@ public extension LJTool where Base: UIButton {
     
     /// 三级信息色
     @discardableResult
-    func tertiaryInfo() -> Self {
+    public func tertiaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setTitleColor(StyleBasic.cg_3, for: .normal)
@@ -350,7 +350,7 @@ public extension LJTool where Base: UIButton {
     
     /// 四级信息色
     @discardableResult
-    func quaternaryInfo() -> Self {
+    public func quaternaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setTitleColor(StyleBasic.cg_4, for: .normal)
@@ -363,7 +363,7 @@ public extension LJTool where Base: UIButton {
     
     /// 类一级信息色
     @discardableResult
-    func primaryLikeInfo() -> Self {
+    public func primaryLikeInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setTitleColor(StyleBasic.cg_13, for: .normal)
@@ -376,7 +376,7 @@ public extension LJTool where Base: UIButton {
     
     /// 藏青色
     @discardableResult
-    func navyBlue() -> Self {
+    public func navyBlue() -> Self {
         switch Style.currentStyle {
         case .light:
             base.setTitleColor(StyleBasic.cb_3, for: .normal)
@@ -388,10 +388,10 @@ public extension LJTool where Base: UIButton {
     }
 }
 
-public extension LJTool where Base: UITextField {
+extension LJTool where Base: UITextField {
     /// 一级信息色
     @discardableResult
-    func primaryInfo() -> Self {
+    public func primaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cd_1
@@ -404,7 +404,7 @@ public extension LJTool where Base: UITextField {
     
     /// 二级信息色
     @discardableResult
-    func secondaryInfo() -> Self {
+    public func secondaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_2
@@ -417,7 +417,7 @@ public extension LJTool where Base: UITextField {
     
     /// 三级信息色
     @discardableResult
-    func tertiaryInfo() -> Self {
+    public func tertiaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_3
@@ -430,7 +430,7 @@ public extension LJTool where Base: UITextField {
     
     /// 四级信息色
     @discardableResult
-    func quaternaryInfo() -> Self {
+    public func quaternaryInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_4
@@ -443,7 +443,7 @@ public extension LJTool where Base: UITextField {
     
     /// 类一级信息色
     @discardableResult
-    func primaryLikeInfo() -> Self {
+    public func primaryLikeInfo() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cg_13
@@ -456,7 +456,7 @@ public extension LJTool where Base: UITextField {
     
     /// 藏青色
     @discardableResult
-    func navyBlue() -> Self {
+    public func navyBlue() -> Self {
         switch Style.currentStyle {
         case .light:
             base.textColor = StyleBasic.cb_3

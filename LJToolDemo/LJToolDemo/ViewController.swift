@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,6 +55,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "LJTool Button"
         case 4:
             cell.textLabel?.text = "LJTool String"
+        case 5:
+            cell.textLabel?.text = "UI Style"
         default:
             break
         }
@@ -94,6 +96,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 4 {
             let string = LJStringViewController()
             navigationController?.pushViewController(string, animated: true)
+        }
+        if indexPath.row == 5 {
+            let style = LJStyleViewController()
+            navigationController?.pushViewController(style, animated: true)
         }
     }
 }

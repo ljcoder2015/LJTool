@@ -7,7 +7,8 @@ target 'LJToolDemo' do
 
   # Pods for LJToolDemo
 
-  pod 'SnapKit', '~> 3.2.0'
+  pod 'SnapKit'
+  
   target 'LJToolDemoTests' do
     inherit! :search_paths
     # Pods for testing

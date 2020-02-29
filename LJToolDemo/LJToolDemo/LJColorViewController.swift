@@ -8,10 +8,11 @@
 
 import UIKit
 import SnapKit
-
-fileprivate let kUITableViewCell = "UITableViewCell"
+import LJTool
 
 class LJColorViewController: UIViewController {
+    
+    fileprivate let kUITableViewCell = "UITableViewCell"
     
     fileprivate lazy var tableView: UITableView = {
         let tableView: UITableView = UITableView.lj.tableView(dataSource: self, delegate: self)
@@ -20,9 +21,9 @@ class LJColorViewController: UIViewController {
         return tableView
     }()
     
-    fileprivate let colorText = ["rgb", "hex", "blue", "tintBlue", "deepBlue", "black", "red", "yellow", "green", "gray", "gray333", "gray666", "gray999", "background", "line", "text", "price"]
+    fileprivate let colorText = ["cd_1", "cg_1", "cg_2", "cg_3", "cg_4", "cg_5", "cg_6", "cg_9", "cg_11", "cg_12", "cg_13", "cg_17", "cg_18", "cg_19", "cp_1", "cr_1", "cr_2", "cb_1", "cb_2", "cb_3", "cgr_1", "cy_1", "cy_2", "cw_1"]
     
-    fileprivate let color = [UIColor.lj.color(r: 10, g: 10, b: 10), UIColor.lj.color(0x123456, alpha: 1), UIColor.lj.blue, UIColor.lj.tintBlue, UIColor.lj.deepBlue, UIColor.lj.black, UIColor.lj.red, UIColor.lj.yellow, UIColor.lj.green, UIColor.lj.gray, UIColor.lj.gray333, UIColor.lj.gray666, UIColor.lj.gray999, UIColor.lj.background, UIColor.lj.line, UIColor.lj.text, UIColor.lj.price]
+    fileprivate let color = [StyleBasic.cd_1, StyleBasic.cg_1, StyleBasic.cg_2, StyleBasic.cg_3, StyleBasic.cg_4, StyleBasic.cg_5, StyleBasic.cg_6, StyleBasic.cg_9, StyleBasic.cg_11, StyleBasic.cg_12, StyleBasic.cg_13, StyleBasic.cg_17, StyleBasic.cg_18, StyleBasic.cg_19, StyleBasic.cp_1, StyleBasic.cr_1, StyleBasic.cr_2, StyleBasic.cb_1, StyleBasic.cb_2, StyleBasic.cb_3, StyleBasic.cgr_1, StyleBasic.cy_1, StyleBasic.cy_2, StyleBasic.cw_1]
     
     override func viewDidLoad() {
         super.viewDidLoad()
