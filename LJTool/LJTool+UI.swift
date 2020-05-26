@@ -12,17 +12,17 @@ import UIKit
 // MARK: Create UILabel
 extension LJTool where Base: UILabel {
     
-    public static func label(textColor: UIColor = UIColor.darkText, fontSize: CGFloat = 17) -> UILabel {
+    public static func label(fontSize: CGFloat = 14) -> UILabel {
         let label = UILabel()
-        label.textColor = textColor
-        label.font = UIFont.systemFont(ofSize: fontSize)
+        label.lj.primaryInfo()
+        label.font = UIFont.systemFont(ofSize: fontSize, weight: .light)
         label.text = "------"
         return label
     }
     
-    public static func label(textColor: UIColor = UIColor.darkText, fontStyle: UIFont.TextStyle = .body) -> UILabel {
+    public static func label(fontStyle: UIFont.TextStyle) -> UILabel {
         let label = UILabel()
-        label.textColor = textColor
+        label.lj.primaryInfo()
         label.text = "------"
         label.font = UIFont.preferredFont(forTextStyle: fontStyle)
         if #available(iOS 10.0, *) {
@@ -48,18 +48,18 @@ extension LJTool where Base: UIImageView {
 // MARK: Create UIButton
 extension LJTool where Base: UIButton {
     
-    public static func button(title: String?, titleColor: UIColor?, fontSize: CGFloat, image: UIImage?) -> UIButton {
-        let button = UIButton(type: .custom)
-        button.setTitleColor(titleColor, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+    public static func button(title: String?, image: UIImage?) -> UIButton {
+        let button = UIButton(type: .system)
+        button.lj.primaryInfo()
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .light)
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
         return button
     }
     
-    public static func button(title: String?, titleColor: UIColor?, fontStyle: UIFont.TextStyle = .body, image: UIImage?) -> UIButton {
-        let button = UIButton(type: .custom)
-        button.setTitleColor(titleColor, for: .normal)
+    public static func button(title: String?, fontStyle: UIFont.TextStyle = .body, image: UIImage?) -> UIButton {
+        let button = UIButton(type: .system)
+        button.lj.primaryInfo()
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: fontStyle)
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
@@ -72,11 +72,18 @@ extension LJTool where Base: UITextField {
     
     public static func textField(placeholder: String?, leftView: UIView? = nil, rightView: UIView? = nil) -> UITextField {
         let textField = UITextField()
+        textField.font = UIFont.systemFont(ofSize: 14, weight: .light)
         textField.placeholder = placeholder
-        textField.leftView = leftView
-        textField.leftViewMode = .always
-        textField.rightView = rightView
-        textField.rightViewMode = .always
+        if (leftView != nil) {
+            textField.leftView = leftView
+            textField.leftViewMode = .always
+        }
+        
+        if (rightView != nil) {
+            textField.rightView = rightView
+            textField.rightViewMode = .always
+        }
+        
         return textField
     }
 }
@@ -88,8 +95,7 @@ extension LJTool where Base: UITableView {
         let tableView = UITableView(frame: .zero, style: style)
         tableView.dataSource = dataSource
         tableView.delegate = delegate
-        tableView.separatorColor = UIColor.lj.color(0xcccccc)
-        tableView.separatorInset = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: 0)
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         return tableView
     }
 }
