@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LJTool"
-  s.version      = "5.1.1"
+  s.version      = "5.2.0"
   s.summary      = "Common tools library"
   s.description  = "LJTool, Help you more convenient and quick development"
   s.homepage     = "https://www.ljcoder.com"
@@ -55,9 +55,9 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "13.0"
   #  When using multiple platforms
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "13.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
