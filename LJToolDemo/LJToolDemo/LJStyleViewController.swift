@@ -20,7 +20,7 @@ class LJStyleViewController: UIViewController {
         return tableView
     }()
     
-    fileprivate let colorText = ["primaryBackground", "secondaryBackground", "tertiaryBackground", "elevatedPrimaryBackground", "elevatedSecondaryBackground", "elevatedTertiaryBackground", "kidPrimaryBackground", "quaternaryBackground", "primaryGroupedBackground", "secondaryGroupedBackground", "tertiaryGroupedBackground", "elevatedPrimaryGroupedBackground", "elevatedSecondaryGroupedBackground", "primaryInfo", "secondaryInfo", "tertiaryInfo", "quaternaryInfo", "primaryLikeInfo", "navyBlue"]
+    fileprivate let colorText = ["primaryBackground", "Background", "secondaryBackground", "tertiaryBackground", "line", "primaryInfo", "secondaryInfo", "tertiaryInfo", "quaternaryInfo"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,49 +48,32 @@ extension LJStyleViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = colorText[indexPath.row]
         switch indexPath.row {
         case 0:
-            cell.contentView.lj.primaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.primary
+            cell.textLabel?.textColor = UIColor.lj.primaryText
         case 1:
-            cell.contentView.lj.secondaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.background
+            cell.textLabel?.textColor = UIColor.lj.primaryText
         case 2:
-            cell.contentView.lj.tertiaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.secondaryBackground
+            cell.textLabel?.textColor = UIColor.lj.primaryText
         case 3:
-            cell.contentView.lj.elevatedPrimaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.tertiaryBackground
+            cell.textLabel?.textColor = UIColor.lj.primaryText
         case 4:
-            cell.contentView.lj.elevatedSecondaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.line
+            cell.textLabel?.textColor = UIColor.lj.primaryText
         case 5:
-            cell.contentView.lj.elevatedTertiaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.background
+            cell.textLabel?.textColor = UIColor.lj.primaryText
         case 6:
-            cell.contentView.lj.kidPrimaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.background
+            cell.textLabel?.textColor = UIColor.lj.secondaryText
         case 7:
-            cell.contentView.lj.quaternaryBackground()
+            cell.contentView.backgroundColor = UIColor.lj.background
+            cell.textLabel?.textColor = UIColor.lj.tertiaryText
         case 8:
-            cell.contentView.lj.primaryGroupedBackground()
-        case 9:
-            cell.contentView.lj.secondaryGroupedBackground()
-        case 10:
-            cell.contentView.lj.tertiaryGroupedBackground()
-        case 11:
-            cell.contentView.lj.elevatedPrimaryGroupedBackground()
-        case 12:
-            cell.contentView.lj.elevatedSecondaryGroupedBackground()
-        case 13:
-            cell.contentView.lj.primaryBackground()
-            cell.textLabel?.lj.primaryInfo()
-        case 14:
-            cell.contentView.lj.primaryBackground()
-            cell.textLabel?.lj.secondaryInfo()
-        case 15:
-            cell.contentView.lj.primaryBackground()
-            cell.textLabel?.lj.tertiaryInfo()
-        case 16:
-            cell.contentView.lj.primaryBackground()
-            cell.textLabel?.lj.quaternaryInfo()
-        case 17:
-            cell.contentView.lj.primaryBackground()
-            cell.textLabel?.lj.primaryLikeInfo()
-        case 18:
-            cell.contentView.lj.primaryBackground()
-            cell.textLabel?.lj.navyBlue()
+            cell.contentView.backgroundColor = UIColor.lj.background
+            cell.textLabel?.textColor = UIColor.lj.quaternaryText
         default:
             break
         }

@@ -35,6 +35,47 @@ extension LJTool where Base == String {
         return base.lj.matchingRegExp("^\\+?(?:[1-9]\\d*(?:\\.\\d{1,2})?|0\\.(?:\\d[1-9]|[1-9]\\d))$")
     }
     
+    /// 添加千分位的函数实现
+    func addMicrometerLevel() -> String {
+        let double = Double(base) ?? 0.00
+        if base.isEmpty || double == 0 {
+            return "0"
+        } else {
+            if double.truncatingRemainder(dividingBy: 1) == 0 { // 小数位为0
+                let numberFormatter = NumberFormatter()
+                numberFormatter.positiveFormat = ",###"
+                let number = NSNumber(value: double)
+                let string = numberFormatter.string(from: number) ?? "0"
+                if double < 1 {
+                    return "0\(string)"
+                }
+                return string
+            } else {
+                let numberFormatter = NumberFormatter()
+                numberFormatter.positiveFormat = ",###.00"
+                let number = NSNumber(value: double)
+                let string = numberFormatter.string(from: number) ?? "0.00"
+                if double < 1 {
+                    return "0\(string)"
+                }
+                return string
+            }
+        }
+    }
+    
+    /// 16进制字符串转10进制Int
+    func radix16To10Int() -> Int {
+        let str = base.uppercased()
+         var sum = 0
+         for i in str.utf8 {
+             sum = sum * 16 + Int(i) - 48 // 0-9 从48开始
+             if i >= 65 {                 // A-Z 从65开始，但有初始值10，所以应该是减去55
+                 sum -= 7
+             }
+         }
+         return sum
+    }
+    
     
     public func toDictionary() -> NSDictionary {
         

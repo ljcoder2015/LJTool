@@ -23,7 +23,7 @@ class LJColorViewController: UIViewController {
     
     fileprivate let colorText = ["cd_1", "cg_1", "cg_2", "cg_3", "cg_4", "cg_5", "cg_6", "cg_9", "cg_11", "cg_12", "cg_13", "cg_17", "cg_18", "cg_19", "cp_1", "cr_1", "cr_2", "cb_1", "cb_2", "cb_3", "cgr_1", "cy_1", "cy_2", "cw_1"]
     
-    fileprivate let color = [StyleBasic.cd_1, StyleBasic.cg_1, StyleBasic.cg_2, StyleBasic.cg_3, StyleBasic.cg_4, StyleBasic.cg_5, StyleBasic.cg_6, StyleBasic.cg_9, StyleBasic.cg_11, StyleBasic.cg_12, StyleBasic.cg_13, StyleBasic.cg_17, StyleBasic.cg_18, StyleBasic.cg_19, StyleBasic.cp_1, StyleBasic.cr_1, StyleBasic.cr_2, StyleBasic.cb_1, StyleBasic.cb_2, StyleBasic.cb_3, StyleBasic.cgr_1, StyleBasic.cy_1, StyleBasic.cy_2, StyleBasic.cw_1]
+    fileprivate let color = [DesignToken.cd_1, DesignToken.cg_1, DesignToken.cg_2, DesignToken.cg_3, DesignToken.cg_4, DesignToken.cg_5, DesignToken.cg_6, DesignToken.cg_9, DesignToken.cg_11, DesignToken.cg_12, DesignToken.cg_13, DesignToken.cg_17, DesignToken.cg_18, DesignToken.cg_19, DesignToken.cp_1, DesignToken.cr_1, DesignToken.cr_2, DesignToken.cb_1, DesignToken.cb_2, DesignToken.cb_3, DesignToken.cgr_1, DesignToken.cy_1, DesignToken.cy_2, DesignToken.cw_1]
     
     override func viewDidLoad() {
         super.viewDidLoad()

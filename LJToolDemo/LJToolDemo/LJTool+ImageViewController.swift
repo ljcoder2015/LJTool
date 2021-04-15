@@ -12,8 +12,7 @@ import LJTool
 class LJTool_ImageViewController: UIViewController {
 
     fileprivate lazy var QRLabel: UILabel = {
-        let label = UILabel()
-        label.lj.primaryInfo()
+        let label = UILabel.lj.label()
         label.text = "create a QR image"
         return label
     }()
@@ -24,8 +23,7 @@ class LJTool_ImageViewController: UIViewController {
     }()
     
     fileprivate lazy var colorLabel: UILabel = {
-        let label = UILabel()
-        label.lj.primaryInfo()
+        let label = UILabel.lj.label()
         label.text = "create a color image"
         return label
     }()

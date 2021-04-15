@@ -25,9 +25,9 @@ public protocol LJToolCompatible {
     var lj: LJTool<CompatibleType> { set get }
 }
 
-extension LJToolCompatible {
+public extension LJToolCompatible {
     /// LJTool extensions.
-    public static var lj: LJTool<Self>.Type {
+    static var lj: LJTool<Self>.Type {
         get {
             return LJTool<Self>.self
         }
@@ -36,7 +36,7 @@ extension LJToolCompatible {
         }
     }
     
-    public var lj: LJTool<Self> {
+    var lj: LJTool<Self> {
         get {
             return LJTool(self)
         }

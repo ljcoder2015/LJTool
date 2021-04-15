@@ -11,11 +11,11 @@ import UIKit
 
 extension LJTool where Base: UIColor {
     
-    static var exYellow: UIColor {
-        return UIColor.lj.color(0xf3c02f)
-    }
-    
-    static var background: UIColor {
-        return UIColor.lj.color(r: 240, g: 240, b: 248)
-    }
+//    static var exYellow: UIColor {
+//        return UIColor.lj.color(0xf3c02f)
+//    }
+//    
+//    static var background: UIColor {
+//        return UIColor.lj.color(r: 240, g: 240, b: 248)
+//    }
 }
