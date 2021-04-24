@@ -50,7 +50,7 @@ extension UIButton: LJToolCompatible {
 public extension LJTool where Base: UIButton {
     
     static func button(title: String?, font: UIFont = UIFont.lj.body, image: UIImage?) -> UIButton {
-        let button = UIButton(type: .system)
+        let button = UIButton(type: .custom)
         button.titleLabel?.font = font
         button.titleLabel?.adjustsFontForContentSizeCategory = true
         button.setTitle(title, for: .normal)
